@@ -1,0 +1,20 @@
+features :
+  - pclass
+  - sex
+  - age
+  - sibsp
+  - parch
+  - fare
+  - cabin
+  - embarked
+  - title
+  - survived
+
+target :
+  - survived
+
+file_name:
+  train_file :
+    - train.csv
+  test_file:
+    - test.csv
