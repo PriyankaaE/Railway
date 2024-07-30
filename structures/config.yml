@@ -1,0 +1,41 @@
+package_name: structures
+train_file : data.csv
+test_file: data.csv
+
+features :
+  - pclass
+  - sex
+  - age
+  - sibsp
+  - parch
+  - fare
+  - cabin
+  - embarked
+  - title
+  - survived
+
+target : survived
+
+datatypes:
+  fare: float
+  age: float
+  pclass: O
+
+categorical_variables:
+  - pclass
+  - sex
+  - cabin
+  - embarked
+  - title
+
+numerical_variables:
+  - age
+  - sibsp
+  - parch
+  - fare
+
+test_size: 0.2
+
+cabin_vars: cabin
+
+save_name: titanic_model

@@ -1,0 +1,30 @@
+name: train
+run_id: commands[0]
+env TERM: xterm-256color
+env TMPDIR: /var/folders/jk/0pc850m940gc53n0vkk6dhr40000gn/T/
+env HOME: /Users/priyankaa
+env PATH: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_package/bin:/Users/priyankaa/Documents/Python_venv/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/priyankaa/Library/Application Support/JetBrains/Toolbox/scripts
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox
+env TOX_ENV_DIR: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_package
+env VIRTUAL_ENV: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_package
+env COLUMNS: 167
+env LINES: 10
+metadata pid: 67190
+cwd: /Users/priyankaa/Documents/Assignment/Production_packaging
+allow: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_package/bin/*:train
+cmd: python structures/train.py
+exit_code: 0
+(1309, 10) Index(['pclass', 'sex', 'age', 'sibsp', 'parch', 'fare', 'cabin', 'embarked',
+       'title', 'survived'],
+      dtype='object')   pclass     sex      age  sibsp  parch        fare cabin embarked   title  survived
+0      1  female  29.0000      0      0  211.337494    B5        S    Miss         1
+1      1    male   0.9167      1      2  151.550003   C22        S  Master         1
+2      1  female   2.0000      1      2  151.550003   C22        S    Miss         0
+3      1    male  30.0000      1      2  151.550003   C22        S      Mr         0
+4      1  female  25.0000      1      2  151.550003   C22        S     Mrs         0
+(1047, 9) (262, 9) (1047,) (262,)

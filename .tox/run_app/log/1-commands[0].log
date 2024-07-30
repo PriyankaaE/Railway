@@ -1,0 +1,26 @@
+name: run_app
+run_id: commands[0]
+env TERM: xterm-256color
+env TMPDIR: /var/folders/jk/0pc850m940gc53n0vkk6dhr40000gn/T/
+env HOME: /Users/priyankaa
+env PATH: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_app/bin:/Users/priyankaa/Documents/Python_venv/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/priyankaa/Library/Application Support/JetBrains/Toolbox/scripts
+env PYTHONHASHSEED: 2041326696
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env TOX_ENV_NAME: run_app
+env TOX_WORK_DIR: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox
+env TOX_ENV_DIR: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_app
+env VIRTUAL_ENV: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_app
+env COLUMNS: 167
+env LINES: 10
+metadata pid: 67338
+cwd: /Users/priyankaa/Documents/Assignment/Production_packaging
+allow: /Users/priyankaa/Documents/Assignment/Production_packaging/.tox/test_app/bin/*:train
+cmd: python app/main.py
+exit_code: 1
+
+standard error:
+Traceback (most recent call last):
+  File "/Users/priyankaa/Documents/Assignment/Production_packaging/app/main.py", line 3, in <module>
+    from app.api import router
+ModuleNotFoundError: No module named 'app'
