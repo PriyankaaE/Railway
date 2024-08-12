@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from app.schemas import health
 from app.schemas import predict_schema
-from app.config import settings
+from config import settings
 from app import __version__
 from structures import __version__ as model_version
 import pandas as pd

@@ -1,9 +1,9 @@
 from fastapi import FastAPI, APIRouter, Request
 # from config import settings
-from app.api import router
+from api import router
 from typing import Any
 from fastapi.responses import HTMLResponse
-from app.config import settings
+from config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -37,10 +37,10 @@ app.include_router(root_router)
 #     allow_headers=["*"],
 # )
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
     # Use this for debugging purposes only
     # logger.warning("Running in development mode. Do not run like this in production.")
-    # import uvicorn
+    import uvicorn
 
-    # uvicorn.run(app, host="0.0.0.0", port=3000, log_level="info")
+    uvicorn.run(app, host="localhost", port=3000, log_level="info")
 
